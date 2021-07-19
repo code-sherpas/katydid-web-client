@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -125,8 +124,8 @@ function LogEntry({ className, logEntryKind }) {
             alt={'log-entry'}
             src={logEntryKind.links.iconURL}
             sx={{
-              width: 70,
-              height: 70,
+              width: 50,
+              height: 50,
               zIndex: 11,
               position: 'absolute',
               transform: 'translateY(-50%)'
@@ -135,16 +134,17 @@ function LogEntry({ className, logEntryKind }) {
         </div>
 
         <CardContent className={classes.cardContent}>
-          <Box display="flex" justifyContent="center" width={1}>
+          <Box display="flex" mb={3} justifyContent="center" width={1}>
             <Rating
+              readOnly={true}
               defaultValue={amount}
               precision={0.5}
               max={4}
-              emptyIcon={<FiberManualRecordIcon />}
-              icon={<FiberManualRecordIcon />}
+              emptyIcon={<FiberManualRecordIcon sx={{ fontSize: '2rem' }} />}
+              icon={<FiberManualRecordIcon sx={{ fontSize: '2rem' }} />}
             />
           </Box>
-          <Typography variant="h6" align="center">
+          <Typography variant="h4" align="center">
             {time}
           </Typography>
           <Box textAlign="center">
