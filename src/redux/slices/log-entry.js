@@ -1,6 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
-import exampleResponse from '../slices/example';
 
 const logEntrySlice = createSlice({
   name: 'logEntry',
@@ -36,7 +34,11 @@ export function getlogEntry() {
   return async dispatch => {
     dispatch(logEntrySlice.actions.startLoading());
     try {
+<<<<<<< HEAD
       const response = exampleResponse();
+=======
+      const response = {};
+>>>>>>> 12ddd201e55b01b9b580c277d868a355159649b0
       dispatch(logEntrySlice.actions.getLogEntrySuccess(response));
     } catch (error) {
       dispatch(logEntrySlice.actions.hasError(error));
