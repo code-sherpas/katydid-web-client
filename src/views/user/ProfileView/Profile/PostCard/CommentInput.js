@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import MyAvatar from '~/components/MyAvatar';
-import EmojiPicker from '~/components/EmojiPicker';
+// import EmojiPicker from '~/components/EmojiPicker';
 import roundSend from '@iconify-icons/ic/round-send';
 import roundAddPhotoAlternate from '@iconify-icons/ic/round-add-photo-alternate';
 import { makeStyles } from '@material-ui/core/styles';
@@ -66,7 +66,7 @@ function CommentInput({
               <IconButton size="small" onClick={onClickAttach}>
                 <Icon icon={roundAddPhotoAlternate} width={24} height={24} />
               </IconButton>
-              <EmojiPicker alignRight value={message} setValue={onSetMessage} />
+              {/* <EmojiPicker alignRight value={message} setValue={onSetMessage} /> */}
             </InputAdornment>
           )
         }}

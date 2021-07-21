@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 import React, { useRef, useState } from 'react';
 import micFill from '@iconify-icons/eva/mic-fill';
 import roundSend from '@iconify-icons/ic/round-send';
-import EmojiPicker from '~/components/EmojiPicker';
+// import EmojiPicker from '~/components/EmojiPicker';
 import attach2Fill from '@iconify-icons/eva/attach-2-fill';
 import roundAddPhotoAlternate from '@iconify-icons/ic/round-add-photo-alternate';
 import { makeStyles } from '@material-ui/core/styles';
@@ -95,11 +95,11 @@ function MessageInput({
         className={classes.input}
         startAdornment={
           <InputAdornment position="start">
-            <EmojiPicker
+            {/* <EmojiPicker
               disabled={disabled}
               value={message}
               setValue={setMessage}
-            />
+            /> */}
           </InputAdornment>
         }
         endAdornment={
