@@ -17,6 +17,10 @@ jobs:
       - name: Set React environment using current directory
         run: |
           echo "PUBLIC_URL=/$(basename $(pwd))" >> $GITHUB_ENV
+          
+      - name: Install npm:7
+        run: |
+          npm i -g npm@7
 
       - name: npm install
         run: |
