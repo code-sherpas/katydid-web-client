@@ -13,10 +13,6 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-
-      - name: Set React environment using current directory
-        run: |
-          echo "PUBLIC_URL=/$(basename $(pwd))" >> $GITHUB_ENV
           
       - name: Install npm:7
         run: |
