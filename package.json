@@ -3,6 +3,7 @@
   "author": "Minimal",
   "licence": "UNLICENSED",
   "version": "1.0.0",
+  "homepage": "/",
   "private": true,
   "scripts": {
     "lint:fix": "eslint \"src/**/*.{ts,js,jsx}\" --fix",
