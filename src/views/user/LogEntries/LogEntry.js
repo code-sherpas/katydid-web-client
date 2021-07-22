@@ -132,16 +132,22 @@ function LogEntry({ className, logEntryKind }) {
             }}
           />
         </div>
-
         <CardContent className={classes.cardContent}>
           <Box display="flex" mb={3} justifyContent="center" width={1}>
             <Rating
               readOnly={true}
               defaultValue={amount}
-              precision={0.5}
               max={4}
-              emptyIcon={<FiberManualRecordIcon sx={{ fontSize: '2rem' }} />}
-              icon={<FiberManualRecordIcon sx={{ fontSize: '2rem' }} />}
+              emptyIcon={
+                <img
+                  src={logEntryKind.links.dataRepresentationIcons.emptyIcon}
+                />
+              }
+              icon={
+                <img
+                  src={logEntryKind.links.dataRepresentationIcons.filledIcon}
+                />
+              }
             />
           </Box>
           <Typography variant="h4" align="center">

@@ -1,5 +1,5 @@
 const convertAmount = amount => {
-  return Math.round((amount / 25) * 2) / 2;
+  return Math.round(amount / 25);
 };
 
 export default convertAmount;
