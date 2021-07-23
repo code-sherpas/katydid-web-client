@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     boxShadow: 'none',
     textAlign: 'center',
-    backgroundColor: '#B1E2EF',
+    backgroundColor: '#6CD9C4',
     [theme.breakpoints.up('md')]: {
       display: 'flex',
       textAlign: 'left',
@@ -60,7 +60,7 @@ function Welcome({ displayName, className, ...other }) {
 
         <Button
           variant="contained"
-          sx={{ backgroundColor: '#38B8F7' }}
+          sx={{ backgroundColor: '#05BEC0' }}
           to="/app/children"
           component={RouterLink}
         >
