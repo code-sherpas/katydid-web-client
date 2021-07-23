@@ -58,9 +58,21 @@ function LogEntryCardsView({ match }) {
             child={children}
           />
         ) : (
-          <Typography variant={'h5'} color={'textSecondary'} align={'center'}>
-            No logs to display.
-          </Typography>
+          <Box display="flex" justifyContent="center">
+            <Box>
+              <img
+                src="/static/illustrations/illustration_no_event.svg"
+                alt="illustration"
+              />
+              <Typography
+                variant={'h5'}
+                color={'textSecondary'}
+                align={'center'}
+              >
+                No logs to display.
+              </Typography>
+            </Box>
+          </Box>
         )}
       </Container>
     </Page>

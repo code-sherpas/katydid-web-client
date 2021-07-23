@@ -60,6 +60,10 @@ const useStyles = makeStyles(theme => ({
   },
   divider: {
     margin: theme.spacing(3, 0)
+  },
+  imageSmallSize: {
+    height: '50%',
+    width: '50%'
   }
 }));
 
@@ -143,7 +147,16 @@ function LoginView() {
 
       <Container>
         <div className={classes.content}>
-          <Box sx={{ mb: 5 }}>
+          <Hidden smUp>
+            <Box display="flex" justifyContent="center" mb={3}>
+              <img
+                className={classes.imageSmallSize}
+                src="/static/illustrations/illustration_login.svg"
+                alt="login"
+              />
+            </Box>
+          </Hidden>
+          <Box sx={{ mb: 5, textAlign: 'center' }}>
             <Typography variant="h4" gutterBottom>
               We're happy to see you again!
             </Typography>
