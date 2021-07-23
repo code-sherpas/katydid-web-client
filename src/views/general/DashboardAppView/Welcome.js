@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     boxShadow: 'none',
     textAlign: 'center',
-    backgroundColor: theme.palette.primary.lighter,
+    backgroundColor: '#B1E2EF',
     [theme.breakpoints.up('md')]: {
       display: 'flex',
       textAlign: 'left',
@@ -19,7 +19,10 @@ const useStyles = makeStyles(theme => ({
       justifyContent: 'space-between'
     },
     [theme.breakpoints.up('xl')]: {
-      height: 320
+      height: 420
+    },
+    [theme.breakpoints.down('md')]: {
+      height: 600
     }
   },
   content: {
@@ -43,7 +46,7 @@ function Welcome({ displayName, className, ...other }) {
   return (
     <Card className={clsx(classes.root, className)} {...other}>
       <CardContent className={classes.content}>
-        <Box component="h4" sx={{ pb: 1, typography: 'h4', color: 'grey.800' }}>
+        <Box component="h4" sx={{ pb: 1, typography: 'h4', color: 'white' }}>
           Welcome back,
           <br /> {!displayName ? '...' : displayName}!
         </Box>
@@ -52,13 +55,16 @@ function Welcome({ displayName, className, ...other }) {
           component="p"
           sx={{ typography: 'body2', color: 'grey.800', pb: { xs: 3, xl: 5 } }}
         >
-          {
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything"
-          }
+          {}
         </Box>
 
-        <Button variant="contained" to="#" component={RouterLink}>
-          Go Now
+        <Button
+          variant="contained"
+          sx={{ backgroundColor: '#38B8F7' }}
+          to="/app/children"
+          component={RouterLink}
+        >
+          View children
         </Button>
       </CardContent>
 

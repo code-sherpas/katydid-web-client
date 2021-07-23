@@ -31,9 +31,9 @@ function DashboardAppView() {
   return (
     <Page title="Dashboard" className={classes.root}>
       <Container maxWidth="xl">
-        <Grid container spacing={3}>
+        <Grid container spacing={12}>
           {/*********************/}
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={6}>
             <Welcome displayName={displayName} />
           </Grid>
         </Grid>
