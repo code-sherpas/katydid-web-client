@@ -1,13 +1,8 @@
-[![Issues][issues-shield]][issues-url]
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://katydid-app.herokuapp.com">
-    <img src="/static/brand/logo_single.svg" alt="Logo" width="175">
+  <a href="https://test-katydid-web-client.herokuapp.com/">
+    <img src="/public/static/brand/logo_single.svg" alt="Logo" width="175">
   </a>
 
   <h1 align="center">Katydid-web-client</h1>
@@ -48,11 +43,11 @@
 ## About The Project
 
 <p align="center">
-  <a href="https://katydid-app.herokuapp.com">
+  <a href="https://test-katydid-web-client.herokuapp.com/">
   </a>
 </p>
 
-Check out a live demo [here](https://katydid-app.herokuapp.com).
+Check out a live demo [here](https://test-katydid-web-client.herokuapp.com/).
 
 Katydid is a web application for a **daycare service**. This application empowers parents and guardians to pursue their professional goals and also look after their ward. 
 
