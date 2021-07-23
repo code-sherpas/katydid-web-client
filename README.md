@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://katydid-app.herokuapp.com">
-    <img src="" alt="Logo" width="175">
+    <img src="/static/brand/logo_single.svg" alt="Logo" width="175">
   </a>
 
   <h1 align="center">Katydid-web-client</h1>
