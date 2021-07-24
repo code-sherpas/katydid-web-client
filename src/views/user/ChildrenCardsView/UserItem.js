@@ -72,8 +72,8 @@ function UserItem({ user, className, childId }) {
 
           <CardContent className={classes.cardContent}>
             <Typography
-              sx={{ marginTop: 3 }}
-              variant="subtitle1"
+              sx={{ marginTop: 1.7 }}
+              variant="subtitle2"
               align="center"
             >
               {name}

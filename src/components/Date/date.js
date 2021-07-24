@@ -28,8 +28,11 @@ function DateDisplay() {
   const date = today.getDate();
   const month = months[today.getMonth()];
   const day = days[today.getDay()];
-
-  return <h2 style={{ marginBottom: '2rem' }}>{`${day}, ${month} ${date}`}</h2>;
+  const styles = {
+    fontFamily: "NewSun",
+    marginBottom: '2rem'
+  };
+  return <h2 style={styles}>{`${day}, ${month} ${date}`}</h2>;
 }
 
 export default DateDisplay;

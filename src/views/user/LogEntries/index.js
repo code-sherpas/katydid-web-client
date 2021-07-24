@@ -39,7 +39,7 @@ function LogEntryCardsView({ match }) {
           )}
           links={[
             { name: 'Dashboard', href: PATH_APP.root },
-            { name: 'Child', href: PATH_APP.management.user.children },
+            { name: 'Children', href: PATH_APP.management.user.children },
             { name: 'Daily Events' }
           ]}
         />

@@ -38,7 +38,7 @@ function HeaderDashboard({
     <div className={clsx(classes.root, className)}>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <Box sx={{ flexGrow: 1 }}>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h3" gutterBottom>
             {heading}
           </Typography>
           <MBreadcrumbs links={links} {...other} />
