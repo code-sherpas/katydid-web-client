@@ -47,7 +47,7 @@ function Welcome({ displayName, className, ...other }) {
     <Card className={clsx(classes.root, className)} {...other}>
       <CardContent className={classes.content}>
         <Box component="h4" sx={{ pb: 1, typography: 'h4', color: 'white' }}>
-          It's nice to see you again,
+          We're glad to see you again,
           <br /> {!displayName ? '...' : displayName}!
         </Box>
 
