@@ -32,11 +32,11 @@ function LogEntryCardsView({ match }) {
     <Page title="Management | Children" className={classes.root}>
       <Container>
         <HeaderDashboard
-          heading="Log Entries"
+          heading="Daily Events"
           links={[
             { name: 'Dashboard', href: PATH_APP.root },
             { name: 'Child', href: PATH_APP.management.user.children },
-            { name: 'Log entries' }
+            { name: 'Daily Events' }
           ]}
         />
         <Box display="flex">
