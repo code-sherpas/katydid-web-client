@@ -32,10 +32,10 @@ function LogEntryCardsView({ match }) {
     <Page title="Daily Events" className={classes.root}>
       <Container>
         <HeaderDashboard
-            heading={children.children.data.map(child => 
-              match.params.childId === child.id ?
-              `${child.attributes.name}'s Daily Events` : 
-              ``
+          heading={children.children.data.map(child =>
+            match.params.childId === child.id
+              ? `${child.attributes.name}'s Daily Events`
+              : ``
           )}
           links={[
             { name: 'Dashboard', href: PATH_APP.root },

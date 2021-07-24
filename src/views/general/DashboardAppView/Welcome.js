@@ -60,7 +60,7 @@ function Welcome({ displayName, className, ...other }) {
 
         <Button
           variant="contained"
-          sx={{ backgroundColor: '#05BEC0' }}
+          sx={{ backgroundColor: '#F10C5F' }}
           to="/app/children"
           component={RouterLink}
         >
