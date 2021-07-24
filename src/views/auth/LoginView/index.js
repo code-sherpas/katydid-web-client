@@ -162,7 +162,7 @@ function LoginView() {
               />
             </Box>
           </Hidden>
-          <Box sx={{ mt: 3, mb: 5, textAlign: 'center' }}>
+          <Box sx={{ mt: 3, mb: 3, textAlign: 'center' }}>
 
             <Typography variant="h3" gutterBottom>
               The online diary for day carers and parents.
