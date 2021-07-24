@@ -43,7 +43,7 @@ function FirebaseProvider({ children }) {
               .doc(user.uid)
               .set(
                 {
-                  role: ADMIN_EMAILS.includes(user.email) ? 'admin' : 'user'
+                  role: ADMIN_EMAILS.includes(user.email) ? 'admin' : 'Day Carer'
                 },
                 { merge: true }
               );

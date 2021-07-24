@@ -32,18 +32,12 @@ export default [
   // Kids
   // ----------------------------------------------------------------------
   {
-    subheader: 'Kids',
+    subheader: 'Children',
     items: [
       {
-        title: 'today',
-        icon: ICONS.user,
-        href: PATH_APP.management.user.children,
-        items: [
-          {
-            title: 'children',
-            href: PATH_APP.management.user.children
-          }
-        ]
+        title: `Who's present today?`,
+        //icon: ICONS.user,
+        href: PATH_APP.management.user.children
       }
     ]
   },
@@ -51,11 +45,11 @@ export default [
   // MAIN DASHBOARD
   // ----------------------------------------------------------------------
   {
-    subheader: 'Overview',
+    subheader: 'Dashboard',
     items: [
       {
-        title: 'dashboard',
-        icon: ICONS.dashboard,
+        title: 'Quick Actions',
+        //icon: ICONS.carousel,
         href: PATH_APP.main.root
       }
     ]

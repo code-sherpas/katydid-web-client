@@ -77,7 +77,8 @@ const Typography = {
     lineHeight: 1.5
   },
   overline: {
-    fontSize: pxToRem(12),
+    fontFamily: FONT_DIARY,
+    fontSize: pxToRem(13),
     lineHeight: 1.5,
     fontWeight: 700,
     letterSpacing: 1.2,

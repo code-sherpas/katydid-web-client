@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Card } from '@material-ui/core';
+import { Box, Card, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------
 
@@ -29,10 +29,17 @@ function Section({ className }) {
 
   return (
     <Card className={clsx(classes.root, className)}>
-      <Box component="h3" sx={{ typography: 'h3', px: 5, mt: 5, mb: 15 }}>
-        Hi, Welcome Back
+      <Box component="h3" sx={{ px: 5, mt: 10, mb: 5}}>
+        <Typography
+          color="primary"
+          variant="h3"
+        >
+          Hi, Welcome to Katydid
+        </Typography>
       </Box>
-      <img src="/static/illustrations/illustration_login.svg" alt="login" />
+      <Box component="h3" sx={{ typography: 'h3', px: 5, mt: 3, mb: 8 }}>
+        <img src="/static/illustrations/illustration_login_alternative.svg" alt="login" />
+      </Box>
     </Card>
   );
 }
