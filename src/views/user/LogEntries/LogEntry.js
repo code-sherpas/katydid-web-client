@@ -150,7 +150,9 @@ function LogEntry({ className, logEntryKind }) {
               }
             />
           </Box>
-          <Typography variant="h4" align="center">
+          <Typography
+            variant="subtitle1"
+             align="center">
             {time}
           </Typography>
           <Box textAlign="center">

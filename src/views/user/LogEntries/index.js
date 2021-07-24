@@ -35,7 +35,7 @@ function LogEntryCardsView({ match }) {
           heading="Log Entries"
           links={[
             { name: 'Dashboard', href: PATH_APP.root },
-            { name: 'Child', href: PATH_APP.management.user.children },
+            { name: 'Children', href: PATH_APP.management.user.children },
             { name: 'Log entries' }
           ]}
         />

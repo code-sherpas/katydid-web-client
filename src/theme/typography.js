@@ -2,8 +2,9 @@ import { pxToRem, responsiveFontSizes } from '~/utils/formatFontSize';
 
 // ----------------------------------------------------------------------
 
-const FONT_PRIMARY = 'Be Vietnam, sans-serif'; // Google Font
-// const FONT_SECONDARY = 'CircularStd, sans-serif'; // Local Font
+const FONT_PRIMARY = 'Be Vietnam, sans-serif'; 
+const FONT_SECONDARY = 'CircularStd, sans-serif'; 
+const FONT_DIARY = 'NewSun, regular';
 
 const Typography = {
   fontFamily: FONT_PRIMARY,
@@ -19,18 +20,21 @@ const Typography = {
     ...responsiveFontSizes({ sm: 52, md: 58, lg: 64 })
   },
   h2: {
+    fontFamily: FONT_DIARY,
     fontWeight: 600,
     lineHeight: 64 / 48,
     fontSize: pxToRem(32),
     ...responsiveFontSizes({ sm: 40, md: 44, lg: 48 })
   },
   h3: {
+    fontFamily: FONT_DIARY,
     lineHeight: 1.5,
     fontWeight: 600,
     fontSize: pxToRem(24),
     ...responsiveFontSizes({ sm: 26, md: 30, lg: 32 })
   },
   h4: {
+    fontFamily: FONT_DIARY,
     lineHeight: 1.5,
     fontWeight: 600,
     fontSize: pxToRem(20),
@@ -49,12 +53,14 @@ const Typography = {
     ...responsiveFontSizes({ sm: 18, md: 18, lg: 18 })
   },
   subtitle1: {
-    fontSize: pxToRem(16),
+    fontFamily: FONT_DIARY,
+    fontSize: pxToRem(24),
     lineHeight: 1.5,
     fontWeight: 600
   },
   subtitle2: {
-    fontSize: pxToRem(14),
+    fontFamily: FONT_DIARY,
+    fontSize: pxToRem(20),
     lineHeight: 22 / 14,
     fontWeight: 600
   },
@@ -78,6 +84,7 @@ const Typography = {
     textTransform: 'uppercase'
   },
   button: {
+    fontFamily: FONT_DIARY,
     fontWeight: 700,
     lineHeight: 24 / 14,
     fontSize: pxToRem(14),
