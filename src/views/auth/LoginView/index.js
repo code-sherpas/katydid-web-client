@@ -121,7 +121,7 @@ function LoginView() {
   });
 
   return (
-    <Page title="Katydid Login" className={classes.root}>
+    <Page title="Login to Katydid" className={classes.root}>
       <header className={classes.header}>
         <RouterLink to="/">
           <Logo />
@@ -148,25 +148,33 @@ function LoginView() {
       <Container>
         <div className={classes.content}>
           <Hidden smUp>
+            <Box sx={{ mt: 4, mb: 2, textAlign: 'center' }} display="flex" justifyContent="center">
+              <Typography variant="h2" color="primary" gutterBottom>
+                  Hi, welcome to Katydid!
+              </Typography>
+            </Box>
             <Box display="flex" justifyContent="center" mb={3}>
-              <img
+
+              <img 
                 className={classes.imageSmallSize}
-                src="/static/illustrations/illustration_login.svg"
-                alt="login"
+                src="/static/illustrations/illustration_login_alternative.svg"
+                alt="Illustration with a little monster"
               />
             </Box>
           </Hidden>
-          <Box sx={{ mb: 5, textAlign: 'center' }}>
-            <Typography variant="h4" gutterBottom>
-              We're happy to see you again!
+          <Box sx={{ mt: 3, mb: 5, textAlign: 'center' }}>
+
+            <Typography variant="h3" gutterBottom>
+              The online diary for day carers and parents.
             </Typography>
+          </Box>
+          <Box sx={{ mb: 3, textAlign: 'center' }}>
             <Typography color="textSecondary">
               Use your favourite social account to log in.
             </Typography>
+            
           </Box>
-
           <SocialLogin firebase={firebase} />
-
           <Hidden smUp>
             <Box sx={{ mt: 3, typography: 'body2', textAlign: 'center' }}>
               Don’t have an account?&nbsp;
