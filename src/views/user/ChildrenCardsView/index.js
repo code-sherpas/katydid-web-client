@@ -29,9 +29,9 @@ function ChildrenCardsView() {
     <Page title="Children present today" className={classes.root}>
       <Container>
         <HeaderDashboard
-          heading="Children present today"
+          heading="Who's present today?"
           links={[
-            { name: 'Dashboard', href: PATH_APP.root },
+            { name: 'Quick Actions', href: PATH_APP.root },
             { name: 'Children' }
           ]}
         />
