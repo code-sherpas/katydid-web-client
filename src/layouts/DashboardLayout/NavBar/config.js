@@ -56,13 +56,7 @@ export default [
       {
         title: 'dashboard',
         icon: ICONS.dashboard,
-        href: PATH_APP.main.root,
-        items: [
-          {
-            title: 'This week report',
-            href: PATH_APP.main.root
-          }
-        ]
+        href: PATH_APP.main.root
       }
     ]
   }
