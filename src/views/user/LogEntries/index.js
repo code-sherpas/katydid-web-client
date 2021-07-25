@@ -44,7 +44,7 @@ function LogEntryCardsView({ match }) {
             { name: 'Daily Events' }
           ]}
         />
-        <Box display="flex">
+        <Box sx={{ ml: 0.5}} display="flex">
           {children.children.data.map(child =>
             match.params.childId === child.id ? (
               <Avatar
